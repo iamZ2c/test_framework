@@ -44,7 +44,7 @@ class BROWSER:
         self._path = driver_path
         self._browser = browser_type
         self._options = option_type
-        print("被调用")
+        print("被调用1")
 
     @property
     def options(self):
