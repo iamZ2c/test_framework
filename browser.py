@@ -80,7 +80,7 @@ class CHROME(BROWSER):
         # 不显示chrome浏览器正在收到自动化浏览软件的控制
         'excludeSwitches': ['enable-automation'],
         # 以iphone6的分辨打开网站
-        'mobileEmulation': {'devicesName': 'iPhone6'}
+        'mobileEmulation': {'deviceName': 'iPhone 6'}
     }
 
     @property
