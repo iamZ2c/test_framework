@@ -2,7 +2,7 @@ from selenium.webdriver import *
 from typing import Type, Union
 
 
-# 异常类
+# 异常类,检查输入的浏览器类型异常和选项异常
 class BrowserException(Exception):
     def __init__(self, _type):
         self._type = _type
@@ -11,8 +11,8 @@ class BrowserException(Exception):
         return f'unsupported browser type: {self._type}'
 
 
-# 基类
-class Browser:
+# 基类整个类名大写是为了不与selenium包里面重名，导致奇怪的错误
+class BROWSER:
     CHROME_DRIVER_PATH = './driver/chromedriver'
 
     WINDOW_SIZE = (1024, 768)
@@ -44,6 +44,7 @@ class Browser:
         self._path = driver_path
         self._browser = browser_type
         self._options = option_type
+        print("被调用")
 
     @property
     def options(self):
@@ -62,7 +63,7 @@ class Browser:
         return
 
 
-class Chrome(Browser):
+class CHROME(BROWSER):
     HEADLESS = False
 
     IMP_TIME = 30
@@ -87,10 +88,21 @@ class Chrome(Browser):
         chrome_options = self._options()
         chrome_options.add_argument(self.START_MAX)
 
-        for k, v in self.EXP:
+        for k, v in self.EXP.items():
             chrome_options.add_experimental_option(k, v)
 
         chrome_options.headless = self.HEADLESS
         return chrome_options
 
+    @property
+    def browser(self):
+        chrome_browser = self._browser(self._path, options=self.options)
+        chrome_browser.implicitly_wait(self.IMP_TIME)
+        chrome_browser.set_script_timeout(self.SCRIPT_TIME_OUT)
+        chrome_browser.set_window_size(*self.WINDOW_SIZE)
+        return chrome_browser
 
+
+c = CHROME().browser
+c.get('https://www.baidu.com/')
+c.close()
