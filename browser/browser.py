@@ -14,9 +14,9 @@ class BrowserException(Exception):
 # 基类整个类名大写是为了不与selenium包里面重名，导致奇怪的错误
 class BROWSER:
     # 驱动路径
-    # CHROME_DRIVER_PATH = '/Users/bytedance/Desktop/test_framework/driver/chromedriver'
+    CHROME_DRIVER_PATH = '/Users/bytedance/Desktop/test_framework/driver/chromedriver'
 
-    CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\test_framework\\driver\\chromedriver.exe'
+    # CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\test_framework\\driver\\chromedriver.exe'
     IE_DRIVER_PATH = ''
 
     # WINDOW_SIZE = (1024, 768)
