@@ -5,7 +5,7 @@ import os
 class IniReader:
     def __init__(self, file_path=None):
         if file_path is None:
-            file_path = os.path.dirname(os.getcwd()) + "\\config\\LocateElement.ini"
+            file_path = os.path.join(os.path.dirname(os.getcwd()), "config\LocateElement.ini")
         self.config = configparser.ConfigParser()
         self.config.read(file_path, encoding='utf-8')
 
