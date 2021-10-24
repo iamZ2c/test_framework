@@ -4,6 +4,7 @@ from browser.browser import CHROME
 from page.base_page import Page
 from icecream.icecream import ic
 
+
 class CommonLogin(Page):
     # CHROME.OPTION_MARK = False
     driver = CHROME().browser

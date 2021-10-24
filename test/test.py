@@ -30,7 +30,6 @@ from bussines.common.common_login_page import CommonLogin
 
 
 # unittest原生方法TestCase类的subTest()实例方法,看上去好像是普通的循环，但是遇到assert false之后还是可以继续执行,
-# subText方式写出的
 # subText 方法里面的item必须是字典可格式的和上一个方法有所区别
 data = (
     {"account": 'yfadmin', 'pwd': "123456abc"},
@@ -42,6 +41,10 @@ data = (
 class TestLogin2(unittest.TestCase, CommonLogin):
     def setUp(self) -> None:
         self.get_page()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.driver.quit()
 
     def test_login_success(self):
         for d in data:
@@ -58,4 +61,4 @@ class TestLogin2(unittest.TestCase, CommonLogin):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    pass
