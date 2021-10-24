@@ -1,5 +1,6 @@
 from selenium.webdriver import *
 from typing import Type, Union
+from config import settings
 
 
 # 异常类,检查输入的浏览器类型异常和选项异常
@@ -14,20 +15,19 @@ class BrowserException(Exception):
 # 基类整个类名大写是为了不与selenium包里面重名，导致奇怪的错误
 class BROWSER:
     # 驱动路径
-    CHROME_DRIVER_PATH = '/Users/bytedance/Desktop/test_framework/driver/chromedriver'
+    CHROME_DRIVER_PATH = settings.CHROME_DRIVER_PATH
 
-    # CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\test_framework\\driver\\chromedriver.exe'
     IE_DRIVER_PATH = ''
 
     # WINDOW_SIZE = (1024, 768)
     # 隐式等待时间
-    IMP_TIME = 30
+    IMP_TIME = settings.IMP_TIME
     # 页面加载时间
-    PAGE_LOAD_TIME = 20
+    PAGE_LOAD_TIME = settings.PAGE_LOAD_TIME
     # js加载时间
-    SCRIPT_TIME_OUT = 20
+    SCRIPT_TIME_OUT = settings.SCRIPT_TIME_OUT
 
-    HEADLESS = True
+    HEADLESS = settings.HEADLESS
 
     def __init__(self,
                  browser_type: Type[Union[Firefox, Chrome, Ie, Safari]] = Chrome,
@@ -69,34 +69,29 @@ class BROWSER:
 
 class CHROME(BROWSER):
     # 是否提添加启动参数
-    OPTION_MARK = True
+    CHROME_OPTION_MARK = settings.CHROME_OPTION_MARK
     # 启动完成后的操作
-    METHOD_MARK = True
+    CHROME_METHOD_MARK = settings.CHROME_METHOD_MARK
 
-    HEADLESS = False
+    CHROME_HEADLESS = settings.CHROME_HEADLESS
 
-    IMP_TIME = 30
+    CHROME_IMP_TIME = settings.CHROME_IMP_TIME
 
-    PAGE_LOAD_TIME = 30
+    CHROME_PAGE_LOAD_TIME = settings.CHROME_PAGE_LOAD_TIME
 
-    SCRIPT_TIME_OUT = 30
+    CHROME_SCRIPT_TIME_OUT = settings.CHROME_SCRIPT_TIME_OUT
 
-    WINDOW_SIZE = (1920, 900)
+    CHROME_WINDOW_SIZE = settings.CHROME_WINDOW_SIZE
 
-    START_MAX = "--kiosk"
+    START_MAX = settings.START_MAX
     # mac "--kiosk"
     # windows '--start-maximized'
 
-    EXP = {
-        # 不显示chrome浏览器正在收到自动化浏览软件的控制
-        'excludeSwitches': ['enable-automation'],
-        # 以iphone6的分辨打开网站
-        # 'mobileEmulation': {'deviceName': 'iPhone 6'}
-    }
+    EXP = settings.EXP
 
     @property
     def options(self):
-        if self.OPTION_MARK:
+        if self.CHROME_OPTION_MARK:
             chrome_options = self._options()
             chrome_options.add_argument(self.START_MAX)
 
@@ -104,7 +99,7 @@ class CHROME(BROWSER):
                 # 添加实验性质参数
                 chrome_options.add_experimental_option(k, v)
 
-            chrome_options.headless = self.HEADLESS
+            chrome_options.headless = self.CHROME_HEADLESS
             return chrome_options
         else:
             return None
@@ -127,10 +122,10 @@ class CHROME(BROWSER):
             chrome_browser = self._browser(
                 self._path,
             )
-        if self.METHOD_MARK:
+        if self.CHROME_METHOD_MARK:
             chrome_browser.implicitly_wait(self.IMP_TIME)
             chrome_browser.set_script_timeout(self.SCRIPT_TIME_OUT)
-            chrome_browser.set_window_size(*self.WINDOW_SIZE)
+            chrome_browser.set_window_size(*self.CHROME_WINDOW_SIZE)
         return chrome_browser
 
 
@@ -160,7 +155,5 @@ class IE(BROWSER):
         ie_browser.set_script_timeout(self.SCRIPT_TIME_OUT)
         ie_browser.maximize_window()
         return ie_browser
-
-
 
 # CHROME().browser.get(url='http://www.douxuedu.com/#/main/course')
