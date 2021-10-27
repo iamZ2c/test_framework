@@ -32,3 +32,6 @@ Traceback (most recent call last):
 AssertionError: None is not true : 用例'test_tip_text'检验失败
 09:45:10 - TestReport - DEBUG - PASS- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
 09:45:16 - TestReport - DEBUG - PASS- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_2___v_code_None____请输入验证码__>, ['v_code_None', '请输入验证码']) - kwargs:{}
+22:54:24 - TestReport - DEBUG - PASS- method_namesend - args:(<__main__.Email object at 0x000001CF885AC490>,) - kwargs:{}
+23:01:17 - TestReport - DEBUG - PASS- method_nametest122 - args:(('1', '2'),) - kwargs:{}
+23:02:13 - TestReport - DEBUG - PASS- method_nametest122 - args:(1,) - kwargs:{}

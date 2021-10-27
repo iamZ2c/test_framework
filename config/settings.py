@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
-# ------------------------------CASE_EXECUTOR_SETTINGS--------------------------------------
-GENERATE_TEST_REPORT = False
 
-REPORT_NAME = "质保部自动化测试报告"
-
-REPORT_TITLE = 'DouXueBaseLineTestReport'
-
-SEND_EMAIL = False
-
-RECEIVERS_EMAIL = "1059995908@qq.com"
 
 # ------------------------------BROWSER_SETTINGS--------------------------------------------
 
@@ -20,7 +11,6 @@ PAGE_LOAD_TIME = 20
 SCRIPT_TIME_OUT = 20
 
 HEADLESS = False
-
 
 IE_DRIVER_PATH = ''
 
@@ -56,3 +46,31 @@ EXP = {
 PROJECT_URL = "http://www.zhixuetong.com.cn/"
 
 BY_RULES = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
+
+# ------------------------------SMTP_EMAIL_SETTINGS--------------------------------------------
+
+
+SENDER = 'iam2cc@foxmail.com'
+
+RECEIVERS = ['1059995908@qq.com',]
+
+SERVER = "smtp.qq.com"
+
+AUTH_CODE = 'oqmnkweutuugbbcj',
+
+TITLE = "TEST-REPORT"
+# 邮件正文
+MESSAGE = None
+# 附件
+ATTACHMENT_FILE = None
+
+# ------------------------------CASE_EXECUTOR_SETTINGS--------------------------------------
+GENERATE_TEST_REPORT = False
+
+REPORT_NAME = "质保部自动化测试报告"
+
+REPORT_TITLE = 'DouXueBaseLineTestReport'
+
+SEND_EMAIL = False
+
+RECEIVERS_EMAIL = "1059995908@qq.com"

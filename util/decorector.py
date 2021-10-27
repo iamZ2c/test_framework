@@ -45,9 +45,7 @@ def depend(case=''):
                 case in str(_mark),
                 f'The pre-depend case:{case} has failed! Skip the specified'
             )(func)(self)
-
         return inner_func
-
     return warps_func
 
 
