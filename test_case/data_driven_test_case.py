@@ -3,6 +3,7 @@ from business import register_business
 from test_case.ydy_base_test_case import YdyBaseTestCase
 from util.execel_util import ExcelUtil
 from config import settings
+from util.decorector import log_print
 
 eu = ExcelUtil()
 execle_data = eu.get_data()
@@ -24,6 +25,7 @@ class DataDrivenTestCase(YdyBaseTestCase):
     def tearDown(self):
         super().tearDown()
 
+    @log_print
     @ddt.data(*execle_data)
     def test_tip_text(self, data):
         key = data[0]

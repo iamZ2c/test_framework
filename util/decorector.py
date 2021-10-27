@@ -1,5 +1,6 @@
 from functools import wraps
 from unittest import TestCase, skipIf
+from log.new_log import log
 
 
 # 本模块是处理case之间的依赖关系 6-3
@@ -48,3 +49,24 @@ def depend(case=''):
         return inner_func
 
     return warps_func
+
+
+def log_print(func):
+    @wraps(func)
+    def inner_func(*args, **kwargs):
+        try:
+            func(*args, **kwargs)
+        except Exception as e:
+            log.exception(
+                f'method_name{func.__name__} - args:{args} - kwargs:{kwargs}',
+                exc_info=True,
+                extra={'status': f"FAILED reason:{e}"}
+            )
+            raise
+
+        log.debug(
+            f'method_name{func.__name__} - args:{args} - kwargs:{kwargs}',
+            extra={'status': "PASS"}
+        )
+
+    return inner_func

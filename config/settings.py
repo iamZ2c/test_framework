@@ -6,7 +6,7 @@ REPORT_NAME = "质保部自动化测试报告"
 
 REPORT_TITLE = 'DouXueBaseLineTestReport'
 
-SEND_EMAIL = True
+SEND_EMAIL = False
 
 RECEIVERS_EMAIL = "1059995908@qq.com"
 
@@ -21,11 +21,12 @@ SCRIPT_TIME_OUT = 20
 
 HEADLESS = False
 
-# CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\test_framework\\driver\\chromedriver.exe'
+
 IE_DRIVER_PATH = ''
 
 # ------------------------------CHROME_SETTINGS----------------------------------------------
-CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\unitest_framework\\dirver\\chromedriver.exe'
+# CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\unitest_framework\\dirver\\chromedriver.exe'
+CHROME_DRIVER_PATH = '/Users/bytedance/Desktop/test_framework/dirver/chromedriver'
 
 # 是否提添加启动参数
 CHROME_OPTION_MARK = True

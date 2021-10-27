@@ -21,8 +21,8 @@ class CaseExecutor:
         """
         self.ss = smtp_servers.SmtpServers()
         self.suite = unittest.TestSuite()
-        self.case_path = os.path.dirname(os.getcwd()) + "\\test_case"
-        self.report_path = os.path.dirname(os.getcwd()) + '\\report\\'
+        self.case_path = os.path.join(os.path.dirname(os.getcwd()), 'test_case')
+        self.report_path = os.path.join(os.path.dirname(os.getcwd()), 'report', '')
         # 管理时候生成报告
         if report is False:
             self.runner = unittest.TextTestRunner()

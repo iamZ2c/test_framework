@@ -112,7 +112,6 @@ class CHROME(BROWSER):
         """
         # print("driver路径：", self._path)
         if self.options:
-            print("driver路径：", self._path)
             chrome_browser = self._browser(
                 self._path,
                 options=self.options)

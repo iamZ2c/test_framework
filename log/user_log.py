@@ -44,5 +44,5 @@ class UserLog:
 
 
 # 测试代码
-# ul = UserLog()
+ul = UserLog()
 # ul.get_logger()

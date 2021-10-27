@@ -1,9 +1,9 @@
 import time
 import unittest
 import os
-from selenium import webdriver
-from log.user_log import UserLog
 from browser.browser import CHROME
+from util.decorector import log
+
 
 class YdyBaseTestCase(unittest.TestCase):
     """
@@ -15,13 +15,11 @@ class YdyBaseTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.ul = UserLog()
-        cls.logger = cls.ul.get_logger()
         print("开始执行用例")
 
     @classmethod
     def tearDownClass(cls):
-        cls.ul.logger_close()
+
         print("用例执行完毕")
 
     def setUp(self):
@@ -29,8 +27,6 @@ class YdyBaseTestCase(unittest.TestCase):
         self.driver = CHROME().browser
         # 最大化浏览器窗口，也可以不写这个，在chrome增加启动参数
         self.driver.maximize_window()
-        # 日志模块
-        self.logger.info("chrome is starting")
 
     def tearDown(self):
         time.sleep(2)
@@ -40,7 +36,7 @@ class YdyBaseTestCase(unittest.TestCase):
             if error:
                 # 获取错误用例方法名字
                 case_name = self._testMethodName
-                dir_path = os.path.dirname(os.getcwd()) + "\\error_image"
+                dir_path = os.path.join(os.path.dirname(os.getcwd()), 'error_image')
                 # 图片存储位置
                 image_name = dir_path + "\\" + case_name + ".png"
                 # 截图操作

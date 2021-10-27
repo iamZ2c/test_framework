@@ -1,0 +1,34 @@
+18:32:55 - TestReport - INFO - pending- test_tip_text_1___phone_num_None_tip____请输手机号__
+18:32:58 - TestReport - INFO - pending- test_tip_text_1___phone_num_None_tip____请输手机号__
+18:33:02 - TestReport - INFO - pending- test_tip_text_2___v_code_None____请输入验证码__
+18:33:04 - TestReport - INFO - pending- test_tip_text_2___v_code_None____请输入验证码__
+18:33:08 - TestReport - INFO - pending- test_ydy_test
+18:33:09 - TestReport - INFO - pending- test_ydy_test
+18:33:13 - TestReport - INFO - pending- test_ydy_test
+18:33:13 - TestReport - INFO - pending- test_ydy_test
+18:33:17 - TestReport - INFO - pending- test_ydy_test
+18:33:17 - TestReport - INFO - pending- test_ydy_test
+18:34:30 - TestReport - DEBUG - pending- test_tip_text_1___phone_num_None_tip____请输手机号__
+18:34:33 - TestReport - DEBUG - end- test_tip_text_1___phone_num_None_tip____请输手机号__
+18:34:38 - TestReport - DEBUG - pending- test_tip_text_2___v_code_None____请输入验证码__
+18:34:41 - TestReport - DEBUG - end- test_tip_text_2___v_code_None____请输入验证码__
+18:34:44 - TestReport - DEBUG - pending- test_ydy_test
+18:34:46 - TestReport - DEBUG - end- test_ydy_test
+18:34:50 - TestReport - DEBUG - pending- test_ydy_test
+18:34:50 - TestReport - DEBUG - end- test_ydy_test
+18:34:54 - TestReport - DEBUG - pending- test_ydy_test
+18:34:54 - TestReport - DEBUG - end- test_ydy_test
+21:25:01 - TestReport - DEBUG - FAILED reason:None is not true : 用例'test_tip_text'检验失败- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
+21:25:01 - TestReport - DEBUG - PASS- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
+21:25:09 - TestReport - DEBUG - PASS- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_2___v_code_None____请输入验证码__>, ['v_code_None', '请输入验证码']) - kwargs:{}
+09:45:10 - TestReport - ERROR - FAILED reason:None is not true : 用例'test_tip_text'检验失败- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
+Traceback (most recent call last):
+  File "/Users/bytedance/Desktop/test_framework/util/decorector.py", line 58, in inner_func
+    func(*args, **kwargs)
+  File "/Users/bytedance/Desktop/test_framework/test_case/data_driven_test_case.py", line 33, in test_tip_text
+    self.assertTrue(expr=self.rb.assert_tip_text(key=key, text=assert_text),
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: None is not true : 用例'test_tip_text'检验失败
+09:45:10 - TestReport - DEBUG - PASS- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
+09:45:16 - TestReport - DEBUG - PASS- method_nametest_tip_text - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_2___v_code_None____请输入验证码__>, ['v_code_None', '请输入验证码']) - kwargs:{}

@@ -1,0 +1,8 @@
+selenium
+paramunittest
+faker
+ddt
+configparser
+xlrd
+xlutils
+faker

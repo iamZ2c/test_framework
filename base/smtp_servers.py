@@ -47,7 +47,7 @@ class SmtpServers:
         else:
             e_text = "尊敬的各位领导及同事：质量控制部测试组针对斗学网产品基础功能进行了自动化测试，" \
                      "发现问题详见测试报告，无流程阻塞，请尽快修复，详情请查看附件！谢谢！\n{}".format(
-                      time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+                time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
             msg = MIMEMultipart()
             text = MIMEText(e_text, 'plain', 'utf-8')
             msg.attach(text)
@@ -55,7 +55,7 @@ class SmtpServers:
         if files_names:
             print(files_names)
             for file_name in files_names:
-                doc_file = os.path.dirname(os.getcwd()) + "\\report\\{}".format(file_name)
+                doc_file = os.path.join(os.path.dirname(os.getcwd()), 'report', '') + file_name
                 doc_apart = MIMEApplication(open(doc_file, 'rb').read())
                 doc_apart.add_header('Content-Disposition', 'attachment', filename="质保部自动化测试报告,生成时间:{}.html".format(
                     time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))))
@@ -79,7 +79,6 @@ class SmtpServers:
         获取所有report目录报告名字
         :return:list类型,report目录下所有文件名称
         """
-        path = os.path.dirname(os.getcwd()) + "\\report\\"
+        path = os.path.join(os.path.dirname(os.getcwd()), 'report', '')
         self.report_list = os.listdir(path)
         return self.report_list
-
