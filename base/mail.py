@@ -5,6 +5,7 @@ from email.mime.text import MIMEText
 from os.path import exists
 from smtplib import SMTP
 
+
 class Email:
     def __init__(
             self,
@@ -45,7 +46,7 @@ class Email:
 
         # 传入server对象
         smtp_server = SMTP(self.server)
-        smtp_server.login(self.server, self.auth_code)
+        smtp_server.login(self.sender, self.auth_code)
         smtp_server.sendmail(self.sender, self.receiver, self.msg.as_string())
         smtp_server.quit()
 
@@ -61,3 +62,16 @@ class Email:
             file_name = re.split(r'[\\|/]', file_path)[-1]
             att["Content-Disposition"] = f'attachment; filename="{file_name}"'
             self.msg.attach(att)
+
+
+mail = Email(
+    title="TEST",
+    sender='iam2cc@foxmail.com',
+    receiver='1059995908@qq.com',
+    server="smtp.qq.com",
+    message="Test SMTP",
+    auth_code='oqmnkweutuugbbcj',
+    attachment_file=None
+)
+
+mail.send()
