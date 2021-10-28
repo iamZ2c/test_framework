@@ -1,11 +1,11 @@
 import ddt
 from business import register_business
 from test_case.ydy_base_test_case import YdyBaseTestCase
-from util.execel_util import ExcelUtil
+from reader.excel_reader import ExcelReader
 from config import settings
 from util.decorector import log_print
 
-eu = ExcelUtil()
+eu = ExcelReader()
 execle_data = eu.get_data()
 
 

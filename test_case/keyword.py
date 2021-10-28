@@ -1,4 +1,4 @@
-from util.execel_util import ExcelUtil
+from reader.excel_reader import ExcelReader
 from keywordselenium.actionMethod import ActionMethod
 import os
 
@@ -6,7 +6,7 @@ import os
 class KeywordCase:
     def __init__(self):
         self.am = ActionMethod()
-        self.eu = ExcelUtil(os.path.dirname(os.getcwd()) + "\\config\\test_case.xls")
+        self.eu = ExcelReader(os.path.dirname(os.getcwd()) + "\\config\\test_case.xls")
 
     def run_main(self):
         case_num = self.eu.get_lines()
@@ -38,7 +38,7 @@ class KeywordCase:
             method_value(key)
 
     def write_actual(self, text, rows):
-        self.eu = ExcelUtil(os.path.dirname(os.getcwd()) + "\\config\\test_case.xls")
+        self.eu = ExcelReader(os.path.dirname(os.getcwd()) + "\\config\\test_case.xls")
         self.eu.write_value(row=rows, write_text=text)
 
 

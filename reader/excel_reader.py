@@ -1,16 +1,16 @@
 import xlrd
-import os
 from xlutils.copy import copy
+from config import settings
 
 
-class ExcelUtil:
+class ExcelReader:
     """
     读取execle数据类型
     """
 
     def __init__(self, excel_path=None, index=None):
         if excel_path is None:
-            excel_path = os.path.join(os.path.dirname(os.getcwd()), 'config', 'tips_and_text.xls')
+            excel_path = settings.EXCEL_FILE_PATH
         if index is None:
             index = 0
         self.data = xlrd.open_workbook(excel_path)
@@ -43,7 +43,4 @@ class ExcelUtil:
         read_value = self.data
         write_value = copy(read_value)
         write_value.get_sheet(0).write(row, 9, write_text)
-        write_value.save(os.path.join(os.path.dirname(os.getcwd()), 'config', 'test_case.xls'))
-
-
-
+        write_value.save(settings.EXCEL_FILE_PATH)

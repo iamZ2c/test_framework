@@ -1,4 +1,4 @@
-from util.ini_reader import IniReader
+from reader.ini_reader import IniReader
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from browser.browser import CHROME

@@ -4,6 +4,8 @@
 # ------------------------------BROWSER_SETTINGS--------------------------------------------
 
 # 隐式等待时间
+import os
+
 IMP_TIME = 30
 # 页面加载时间
 PAGE_LOAD_TIME = 20
@@ -52,7 +54,7 @@ BY_RULES = ["id", "xpath", "link text", "partial link text", "name", "tag name",
 
 SENDER = 'iam2cc@foxmail.com'
 
-RECEIVERS = ['1059995908@qq.com',]
+RECEIVERS = ['1059995908@qq.com', ]
 
 SERVER = "smtp.qq.com"
 
@@ -74,3 +76,11 @@ REPORT_TITLE = 'DouXueBaseLineTestReport'
 SEND_EMAIL = False
 
 RECEIVERS_EMAIL = "1059995908@qq.com"
+
+# ------------------------------READER_SETTINGS--------------------------------------
+EXCEL_FILE_PATH = os.path.join(os.path.dirname(os.getcwd()), 'config', 'tips_and_text.xls')
+
+ELEMENT_LOCATE_FILE_PATH = os.path.join(os.path.dirname(os.getcwd()), "config", "LocateElement.ini")
+
+DATA_BASE_FILE_PATH = os.path.join(os.path.dirname(os.getcwd()), "db_servers", "database.ini")
+

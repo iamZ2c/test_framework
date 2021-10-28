@@ -6,3 +6,5 @@ configparser
 xlrd
 xlutils
 faker
+aiomysql
+cx_Oracle
