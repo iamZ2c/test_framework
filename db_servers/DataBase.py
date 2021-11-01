@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
+from typing import List
 import nest_asyncio
-from aiomysql import create_pool
+from aiomysql import create_pool, DictCursor
 from cx_Oracle import SessionPool
 from reader.ini_reader import IniReader
 from config import settings
@@ -45,7 +46,7 @@ class MysqlClient(DataBase):
 
     async def _select(self, sql: str, param: tuple, rows: [int, None]):
         async with self.mysql_pool.acquire() as conn:
-            async with conn.cursor() as cur:
+            async with conn.cursor(DictCursor) as cur:
                 await cur.execute(sql.replace('?', '%s'), param)
                 if rows:
                     res = await cur.fetchmany(rows)
@@ -59,7 +60,7 @@ class MysqlClient(DataBase):
 
     async def _execute(self, sql: str, param: tuple):
         async with self.mysql_pool.acquire() as conn:
-            async with conn.cursor() as cur:
+            async with conn.cursor(DictCursor) as cur:
                 await cur.execute(sql.replace('?', '%s'), param)
                 return cur.rowcount
 
@@ -67,6 +68,56 @@ class MysqlClient(DataBase):
         self._loop.run_until_complete(future := ensure_future(self._execute(sql, param)))
         return future.result()
 
+
+class OracleClient(DataBase):
+
+    @classmethod
+    def setUp(cls, *args, **kwargs):
+        return cls(
+            'oracle',
+            *args,
+            **kwargs
+        )
+
+    def select(self, sql: str, param: [list, None], row: [int, None], **kwargs):
+        if param and kwargs:
+            raise Exception(f'无法同时传入「{param}」「{kwargs}」两种参数！')
+        with self._database().acquire() as conn:
+            with conn.cursor() as cur:
+                cur.execute(sql, (param or kwargs))
+                if row:
+                    if row == 1:
+                        res = cur.fetchone()
+                    else:
+                        res = cur.fetchmany(row)
+                else:
+                    res = cur.fetchall()
+        return res
+
+    def execute(self, sql: str, param: List[tuple], **kwargs):
+        """
+
+        :param sql:
+        :param param: [('tom',1),('jan',2)]类似参数化。对数据进行批量修改
+
+        :param kwargs:
+        :return:
+        """
+        with self._database().acquire() as conn:
+            with conn.cursor as cur:
+                # 表描述第一个cur.description为列名
+                columns = [col[0] for col in cur.description]
+                # 定制cursor返回对象，加入字段名称，主要是修改cur.rowfactory属性
+                cur.rowfactory = lambda *args: dict(zip(columns, *args))
+                if param:
+                    cur.executemany(sql, param)
+                else:
+                    cur.execute(sql, **kwargs)
+                rowcount = cur.rowcount
+            conn.commit()
+        return rowcount
+
+
 # 测试代码
 # a = MysqlClient.setUp()
-# print(a.select('SELECT * FROM system_news', (),1))
+# print(a.select('SELECT * FROM isn_order', (),1))

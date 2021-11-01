@@ -8,3 +8,4 @@ xlutils
 faker
 aiomysql
 cx_Oracle
+nest_asyncio
