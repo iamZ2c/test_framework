@@ -1,13 +1,15 @@
 from aiohttp import ClientSession
+from icecream import icecream
 from selenium.webdriver.remote.errorhandler import ErrorHandler, ErrorCode
+from util.decorector import add_async_log
 
 
 class Command:
-
     _error_handler = ErrorHandler()
 
-    async def _command(self, method, url, session: ClientSession, **kwargs):
-        async with session.request(method, url) as resp:
+    @add_async_log
+    async def _command(self, method: str, url: str, session: ClientSession, **kwargs):
+        async with session.request(method, url, **kwargs) as resp:
             status_code = resp.status
             if 300 < status_code < 400:
                 # 处理重定向

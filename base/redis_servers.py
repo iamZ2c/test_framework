@@ -17,7 +17,7 @@ class Redis_server:
         """
 
         try:
-            value = "sms:{0}".format(phone_number)
+            value = f"sms:{phone_number}"
             for times in range(0, 3):
                 time.sleep(1)
                 verification_code = self.con.get(value)

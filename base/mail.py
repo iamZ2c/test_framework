@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from os.path import exists
 from smtplib import SMTP
-from util.decorector import log_print
+from util.decorector import add_log
 from config import settings
 
 
@@ -31,7 +31,7 @@ class Email:
         self.auth_code = auth_code
         self.msg = MIMEMultipart('related')
 
-    @log_print
+    @add_log
     def send(self):
         #  写入主题消息
         if self.message:

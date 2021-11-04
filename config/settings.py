@@ -41,7 +41,31 @@ EXP = {
     # 不显示chrome浏览器正在收到自动化浏览软件的控制
     'excludeSwitches': ['enable-automation'],
     # 以iphone6的分辨打开网站
-    # 'mobileEmulation': {'deviceName': 'iPhone 6'}
+    # 'mobileEmulation': {'deviceName': 'iPhone 6'},
+    'args': [
+        '--start-maximized',
+        # '--headless',
+    ],
+    'prefs': {
+        'credentials_enable_service': False,
+        'profile.password_manager_enabled': False
+    }
+}
+
+CHROME_CAPS = {
+    'capabilities': {
+        'firstMatch:': [{}],
+        'anywaysMatch': {
+            'browserName': 'chrome',
+            'platformName': 'any',
+            "timeouts": {
+                'implicit': 3000,
+                'pageLoad': 30000,
+                'script': 30000
+            },
+            'goog:chromeOptions': EXP
+        }
+    }
 }
 
 # ------------------------------PROJECT_SETTINGS----------------------------------------------
@@ -83,4 +107,3 @@ EXCEL_FILE_PATH = os.path.join(os.path.dirname(os.getcwd()), 'config', 'tips_and
 ELEMENT_LOCATE_FILE_PATH = os.path.join(os.path.dirname(os.getcwd()), "config", "LocateElement.ini")
 
 DATA_BASE_FILE_PATH = os.path.join(os.path.dirname(os.getcwd()), "db_servers", "database.ini")
-

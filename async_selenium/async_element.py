@@ -1,8 +1,8 @@
 from async_http_client import Command
 
 
-class Element(Command):
-    def __int__(self, element, url, session):
+class AsyncElement(Command):
+    def __init__(self, element, url, session):
         """
 
         :param element:{element_name: element_id}
@@ -17,8 +17,9 @@ class Element(Command):
         self.session_id = self.url.split('/')[-1]
 
     async def _command(self, method, endpoint, **kwargs):
-        return await super(Element, self)._command(method, self.url + endpoint, self.session, **kwargs)
+        return await super(AsyncElement, self)._command(method, self.url + endpoint, self.session, **kwargs)
 
+    @property
     async def text(self):
         return await self._command('GET', '/text')
 
@@ -41,5 +42,3 @@ class Element(Command):
             "sessionId": self.session_id
         }
         return await self._command("POST", '/clear', json=json)
-
-    # 完成元素类重写，疑问，如何获取session和sessionID
