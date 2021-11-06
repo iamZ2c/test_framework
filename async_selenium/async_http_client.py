@@ -7,7 +7,6 @@ from util.decorector import add_async_log
 class Command:
     _error_handler = ErrorHandler()
 
-    @add_async_log
     async def _command(self, method: str, url: str, session: ClientSession, **kwargs):
         async with session.request(method, url, **kwargs) as resp:
             status_code = resp.status
@@ -25,4 +24,5 @@ class Command:
 
             # 如果状态正确就直接返回结果,否则抛出错误和错误信息
             self._error_handler.check_response(json_res)
+            icecream.ic(f'{json_res["value"]}')
             return json_res['value']

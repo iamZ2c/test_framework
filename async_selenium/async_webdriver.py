@@ -5,8 +5,8 @@ from async_selenium.async_element import AsyncElement
 from async_selenium.async_http_client import Command
 from selenium import webdriver
 
-
 # webdriver.Chrome().get()
+from util.decorector import add_async_log
 
 
 class AsyncBrowser(Command):
@@ -45,18 +45,17 @@ class AsyncBrowser(Command):
     def _session(self):
         return getattr(self, '_http_session')
 
+    @add_async_log
     async def _command(self, method: str, endpoint: str, **kwargs):
-
         await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
 
     async def get(self, url: str):
-        json = {
+        body = {
             "url": url
         }
-        return await self._command("POST", "/url", json=json)
+        return await self._command("POST", "/url", json=body)
 
     async def find_element(self, strategy: str, value: str, endpoint: str = '/element'):
-
         if strategy == 'id':
             strategy = 'css selector'
             value = "[id=%s]" % value
@@ -65,13 +64,13 @@ class AsyncBrowser(Command):
             value = "[name=%s]" % value
         elif strategy == 'class':
             strategy = '.%s' % value
-        json = {
+        body = {
             'using': strategy,
             'value': value
         }
         # 返回一个json，从json里面获取元素
-        element_info = await self._command("POST", endpoint, json=json)
-
+        element_info = await self._command("POST", endpoint, json=body)
+        ic(element_info)
         return AsyncElement(element_info, self._url, self._session)
 
     async def click(self, *location):

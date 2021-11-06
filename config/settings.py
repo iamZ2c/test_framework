@@ -43,8 +43,9 @@ EXP = {
     # 以iphone6的分辨打开网站
     # 'mobileEmulation': {'deviceName': 'iPhone 6'},
     'args': [
-        '--start-maximized',
+        # '--start-maximized',
         # '--headless',
+        START_MAX
     ],
     'prefs': {
         'credentials_enable_service': False,
@@ -55,12 +56,12 @@ EXP = {
 CHROME_CAPS = {
     'capabilities': {
         'firstMatch:': [{}],
-        'anywaysMatch': {
+        'alwaysMatch': {
             'browserName': 'chrome',
             'platformName': 'any',
             "timeouts": {
-                'implicit': 3000,
-                'pageLoad': 30000,
+                'implicit': 30000,
+                'pageLoad': 300000,
                 'script': 30000
             },
             'goog:chromeOptions': EXP
@@ -95,7 +96,7 @@ GENERATE_TEST_REPORT = False
 
 REPORT_NAME = "质保部自动化测试报告"
 
-REPORT_TITLE = 'DouXueBaseLineTestReport'
+REPORT_TITLE = 'TestReport'
 
 SEND_EMAIL = False
 

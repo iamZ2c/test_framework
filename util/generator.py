@@ -134,3 +134,6 @@ def random_user_agent():
 
 def random_mime_type(mime_type: str = "application"):
     return fake.mime_type(mime_type)
+
+
+print(random_profile())

@@ -1,4 +1,5 @@
 from config.settings import PROJECT_URL
+from util.decorector import add_async_log
 
 
 async def get(async_driver, url):
@@ -13,6 +14,9 @@ class BasePage:
 
 
 class HomePage(BasePage):
+    @add_async_log
     async def test(self):
-        await self.get(PROJECT_URL)
-        await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/span/span[3]')
+        await self.get(url=PROJECT_URL)
+        element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+        print(element)
+        element.click()

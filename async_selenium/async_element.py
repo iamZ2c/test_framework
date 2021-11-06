@@ -1,7 +1,11 @@
+from icecream import icecream
+
 from async_http_client import Command
+from util.decorector import add_log
 
 
 class AsyncElement(Command):
+    @add_log
     def __init__(self, element, url, session):
         """
 

@@ -28,7 +28,6 @@ def depend(case=''):
             _r = self._outcome.result
             # 三组数据都是元组('name','reason')
             _f, _e, _s = _r.failures, _r.errors, _r.skipped
-
             if not (_f, _e, _r):
                 func(self)
             if _f:
@@ -41,9 +40,7 @@ def depend(case=''):
                 case in str(_mark),
                 f'The pre-depend case:{case} has failed! Skip the specified'
             )(func)(self)
-
         return inner_func
-
     return warps_func
 
 
@@ -54,13 +51,13 @@ def add_log(func):
             func(*args, **kwargs)
         except Exception as e:
             log.exception(
-                f'method_name{func.__name__}: - args:{args} - kwargs:{kwargs}',
+                f'method_name:{func.__name__}: - args:{args} - kwargs:{kwargs}',
                 exc_info=True,
                 extra={'status': f"FAILED reason:{e}"}
             )
             raise
         log.debug(
-            f'method_name{func.__name__}: - args:{args} - kwargs:{kwargs}',
+            f'method_name:{func.__name__}: - args:{args} - kwargs:{kwargs}',
             extra={'status': "PASS"}
         )
 
@@ -74,13 +71,13 @@ def add_async_log(func):
             await func(*args, **kwargs)
         except Exception as e:
             log.exception(
-                f'method_name{func.__name__}: - args:{args} - kwargs:{kwargs}',
+                f'method_name:{func.__name__} - args:{args} - kwargs:{kwargs}',
                 exc_info=True,
                 extra={'status': f"FAILED reason:{e}"}
             )
             raise
         log.debug(
-            f'method_name{func.__name__}: - args:{args} - kwargs:{kwargs}',
+            f'method_name:{func.__name__}: - args:{args} - kwargs:{kwargs}',
             extra={'status': "PASS"}
         )
 
