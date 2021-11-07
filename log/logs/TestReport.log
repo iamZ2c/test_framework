@@ -1047,3 +1047,938 @@ Traceback (most recent call last):
     self.element_id = element.values()[0]
 AttributeError: 'NoneType' object has no attribute 'values'
 19:17:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x7fa7a049a790>, 'DELETE') - kwargs:{'endpoint': ''}
+01:25:36 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:_command - args:(<async_webdriver.AsyncBrowser object at 0x0000025743DDBD00>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+01:25:36 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:test - args:(<async_test.HomePage object at 0x0000025743DDBDC0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 19, in test
+    await self.get(url=PROJECT_URL)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 13, in get
+    await self.async_driver.get(url)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 56, in get
+    return await self._command("POST", "/url", json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+01:25:36 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000025743DDBD00>, 'DELETE') - kwargs:{'endpoint': ''}
+01:33:31 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:_command - args:(<async_webdriver.AsyncBrowser object at 0x00000254BF66AD00>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+01:33:31 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:test - args:(<async_test.HomePage object at 0x00000254BF66ADC0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 19, in test
+    await self.get(url=PROJECT_URL)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 13, in get
+    await self.async_driver.get(url)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 56, in get
+    return await self._command("POST", "/url", json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+01:33:31 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000254BF66AD00>, 'DELETE') - kwargs:{'endpoint': ''}
+01:33:50 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:_command - args:(<async_webdriver.AsyncBrowser object at 0x00000284CACB9760>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+01:33:50 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:test - args:(<async_test.HomePage object at 0x00000284CACB9970>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 19, in test
+    await self.get(url=PROJECT_URL)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 13, in get
+    await self.async_driver.get(url)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 56, in get
+    return await self._command("POST", "/url", json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+01:33:50 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000284CACB9760>, 'DELETE') - kwargs:{'endpoint': ''}
+10:44:03 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:_command - args:(<async_webdriver.AsyncBrowser object at 0x000001C36B309760>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+10:44:03 - TestReport - ERROR - FAILED reason:Message: invalid session id
+- method_name:test - args:(<async_test.HomePage object at 0x000001C36B309970>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 19, in test
+    await self.get(url=PROJECT_URL)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 13, in get
+    await self.async_driver.get(url)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 56, in get
+    return await self._command("POST", "/url", json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 50, in _command
+    await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid session id
+
+10:44:04 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001C36B309760>, 'DELETE') - kwargs:{'endpoint': ''}
+11:17:44 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001CA6602AC70>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+11:17:44 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001CA6602AC70>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+11:17:44 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001CA6613D1F0>, None, 'http://localhost:63527/session/28d7745e0b9e13ae529cedb4d559d24a', <aiohttp.client.ClientSession object at 0x000001CA6602A400>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+11:17:44 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001CA6602AD30>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 74, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+11:17:44 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001CA6602AC70>, 'DELETE') - kwargs:{'endpoint': ''}
+12:01:05 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000002549AEB5D00>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:01:05 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000002549AEB5D00>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:01:05 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000002549AFD4280>, None, 'http://localhost:54338/session/dc98d473bd541e8a86eecdb822bf5073', <aiohttp.client.ClientSession object at 0x000002549AEB5490>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:01:05 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000002549AEB5DC0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 74, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:01:05 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000002549AEB5D00>, 'DELETE') - kwargs:{'endpoint': ''}
+12:01:20 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001FADB80ACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:01:20 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001FADB80ACA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:01:20 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001FADB91C220>, None, 'http://localhost:54378/session/807f2900228bafe2d19d9585737d3034', <aiohttp.client.ClientSession object at 0x000001FADB80A430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:01:20 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001FADB80AD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 74, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:01:20 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001FADB80ACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:02:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001E6CAF5ACD0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:02:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001E6CAF5ACD0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:02:59 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001E6CB0BDF10>, None, 'http://localhost:54437/session/b8bfce43e5614f4b41109e14358e6726', <aiohttp.client.ClientSession object at 0x000001E6CAF5A460>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:02:59 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001E6CAF5AD90>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 75, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:02:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001E6CAF5ACD0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:03:47 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'value'- method_name:_command - args:(<async_webdriver.AsyncBrowser object at 0x0000026C413BACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    ic(res.value())
+AttributeError: 'NoneType' object has no attribute 'value'
+12:03:47 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'value'- method_name:test - args:(<async_test.HomePage object at 0x0000026C413BAD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 19, in test
+    await self.get(url=PROJECT_URL)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 13, in get
+    await self.async_driver.get(url)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 57, in get
+    return await self._command("POST", "/url", json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    ic(res.value())
+AttributeError: 'NoneType' object has no attribute 'value'
+12:03:47 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'value'- method_name:_command - args:(<async_webdriver.AsyncBrowser object at 0x0000026C413BACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+Traceback (most recent call last):
+  File "C:/Users/iam2cc/Desktop/selfProject/test_framework/async_selenium/async_main.py", line 19, in main
+    await eval(f'instance.{attr}()')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 19, in test
+    await self.get(url=PROJECT_URL)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 13, in get
+    await self.async_driver.get(url)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 57, in get
+    return await self._command("POST", "/url", json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    ic(res.value())
+AttributeError: 'NoneType' object has no attribute 'value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    ic(res.value())
+AttributeError: 'NoneType' object has no attribute 'value'
+12:04:12 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000021008895D00>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:04:12 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000021008895D00>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:04:12 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x00000210091FAF40>, None, 'http://localhost:54531/session/0425365b811660ce25b50ea17ca9c2ff', <aiohttp.client.ClientSession object at 0x0000021008895490>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:04:12 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x0000021008895DC0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 75, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:04:12 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000021008895D00>, 'DELETE') - kwargs:{'endpoint': ''}
+12:05:30 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000220ACDFAC40>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:05:30 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000220ACDFAC40>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:05:30 - TestReport - ERROR - FAILED reason:can only concatenate str (not "NoneType") to str- method_name:test - args:(<async_test.HomePage object at 0x00000220ACDFAD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 73, in find_element
+    ic('12312312'+element_info)
+TypeError: can only concatenate str (not "NoneType") to str
+12:05:30 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000220ACDFAC40>, 'DELETE') - kwargs:{'endpoint': ''}
+12:05:53 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000002857C09ACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:05:53 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000002857C09ACA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:05:53 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000002857C0E9790>, None, 'http://localhost:54798/session/1cc4295391101b5e237c17e947139a16', <aiohttp.client.ClientSession object at 0x000002857C09A430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:05:53 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000002857C09AD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 75, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:05:53 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000002857C09ACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:07:56 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001A76ED1ACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:07:56 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001A76ED1ACA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:07:56 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001A76ED69790>, None, 'http://localhost:54862/session/96d9c69633b89f3c71e678e9ecfd7623', <aiohttp.client.ClientSession object at 0x000001A76ED1A430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:07:56 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001A76ED1AD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 76, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:07:56 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001A76ED1ACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:09:46 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001D122E8ACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:09:46 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001D122E8ACA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:09:46 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001D122ED9790>, None, 'http://localhost:54985/session/7b90b285c20ac15883fcafc773a3cef7', <aiohttp.client.ClientSession object at 0x000001D122E8A430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:09:46 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001D122E8AD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:09:47 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001D122E8ACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:12:25 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000274ECA45D30>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:12:25 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000274ECA45D30>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:12:25 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x00000274ECA45DF0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 22, in test
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:12:25 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000274ECA45D30>, 'DELETE') - kwargs:{'endpoint': ''}
+12:13:55 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000024031C2DC10>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:13:55 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000024031C2DC10>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:13:55 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x0000024031C2DCD0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 22, in test
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:13:55 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000024031C2DC10>, 'DELETE') - kwargs:{'endpoint': ''}
+12:16:31 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000213AC00DBE0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:16:31 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000213AC00DBE0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:16:31 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x00000213AC00DCA0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 22, in test
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:16:31 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000213AC00DBE0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:19:47 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000029A960FAC40>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:19:47 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000029A960FAC40>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:19:47 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x0000029A960FAD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 22, in test
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:19:47 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000029A960FAC40>, 'DELETE') - kwargs:{'endpoint': ''}
+12:22:22 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000194BEDCACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:22:22 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000194BEDCACA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:22:22 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x00000194BEDCAF40>, None, 'http://localhost:59526/session/15575533bcafd9b19f93b57acf935b97', <aiohttp.client.ClientSession object at 0x00000194BEDCA430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:22:22 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x00000194BEDCAD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 76, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:22:22 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000194BEDCACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:22:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000027255B25D00>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:22:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000027255B25D00>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:22:59 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000027255B25FA0>, None, 'http://localhost:59572/session/7ec7a2097a97614e51a211a114f6b7bc', <aiohttp.client.ClientSession object at 0x0000027255B25490>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:22:59 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x0000027255B25DC0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:22:59 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000027255B25D00>, 'DELETE') - kwargs:{'endpoint': ''}
+12:24:52 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000013A6792BCA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:24:52 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000013A6792BCA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:24:52 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000013A6792BF40>, None, 'http://localhost:59689/session/70d499428018da9c84b2fa6ca6eb2ba4', <aiohttp.client.ClientSession object at 0x0000013A6792B430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:24:52 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x0000013A6792BD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 80, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:24:52 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000013A6792BCA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:26:58 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001B47F5CAC40>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:26:58 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001B47F5CAC40>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:26:58 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001B47F5CAEE0>, None, 'http://localhost:59761/session/965f71b3769ca141c74f7289b5af6154', <aiohttp.client.ClientSession object at 0x000001B47F5CA3D0>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:26:58 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001B47F5CAD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 80, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:26:58 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001B47F5CAC40>, 'DELETE') - kwargs:{'endpoint': ''}
+12:28:01 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000249EBAFACD0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:28:01 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000249EBAFACD0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:28:01 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x00000249EBAFAEB0>, None, 'http://localhost:59815/session/d0d4f30f7f5438bcf633e3d02708bd7f', <aiohttp.client.ClientSession object at 0x00000249EBAFA460>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:28:01 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x00000249EBAFAD90>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 81, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:28:01 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000249EBAFACD0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:30:45 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001B95EE7AC40>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:30:45 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001B95EE7AC40>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:30:45 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001B95EE7AEE0>, None, 'http://localhost:59957/session/496b370082d2820a5cd98e46f3286268', <aiohttp.client.ClientSession object at 0x000001B95EE7A3D0>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:30:45 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001B95EE7AD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 81, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:30:45 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001B95EE7AC40>, 'DELETE') - kwargs:{'endpoint': ''}
+12:31:48 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000022D0CA9AC70>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:31:48 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000022D0CA9AC70>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:31:48 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000022D0CA9AF10>, None, 'http://localhost:60007/session/78ca63717f8b96d3f1f0a6eb707ed075', <aiohttp.client.ClientSession object at 0x0000022D0CA9A400>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:31:48 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x0000022D0CA9AD30>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 82, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 78, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:31:48 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000022D0CA9AC70>, 'DELETE') - kwargs:{'endpoint': ''}
+12:34:18 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001865C29AC70>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:34:18 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001865C29AC70>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:34:18 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001865C29AF10>, None, 'http://localhost:60073/session/e4533f00ad1ba46042233ae0715a9a6c', <aiohttp.client.ClientSession object at 0x000001865C29A400>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:34:18 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x000001865C29AD30>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 82, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 78, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:34:18 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x000001865C29AC70>, 'DELETE') - kwargs:{'endpoint': ''}
+12:35:07 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000237A881AC40>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:35:07 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000237A881AC40>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:35:07 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x00000237A881AD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 82, in click
+    return await element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:35:07 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000237A881AC40>, 'DELETE') - kwargs:{'endpoint': ''}
+12:37:07 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x000001BD57125D60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 81, in click
+    return await element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:37:36 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'click'- method_name:test - args:(<async_test.HomePage object at 0x0000015F3FC4AD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 81, in click
+    return await element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+12:40:24 - TestReport - ERROR - FAILED reason:'dict_values' object is not subscriptable- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000021FA9846F40>, {'element-6066-11e4-a52e-4f735466cecf': '5f9ccbb8-d507-44b6-9917-63717c324e6d'}, 'http://localhost:50579/session/f63ac96fc7419cf6045908908d32a4b4', <aiohttp.client.ClientSession object at 0x0000021FA9846460>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+TypeError: 'dict_values' object is not subscriptable
+12:40:24 - TestReport - ERROR - FAILED reason:'dict_values' object is not subscriptable- method_name:test - args:(<async_test.HomePage object at 0x0000021FA9846D60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 80, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 76, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+TypeError: 'dict_values' object is not subscriptable
+12:46:50 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000228882CACA0>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:46:50 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000228882CACA0>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:46:50 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x00000228882CAF40>, None, 'http://localhost:50901/session/79be08f5fa906ec9ffdce8ea2050246d', <aiohttp.client.ClientSession object at 0x00000228882CA430>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:46:50 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x00000228882CAD60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 81, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:46:50 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x00000228882CACA0>, 'DELETE') - kwargs:{'endpoint': ''}
+12:48:00 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000022180FF5D00>, 'POST', '/url') - kwargs:{'json': {'url': 'http://www.zhixuetong.com.cn/'}}
+12:48:00 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000022180FF5D00>, 'POST', '/element') - kwargs:{'json': {'using': 'xpath', 'value': '//*[@id="frame_box"]/header/header/div/ul/li[2]/a'}}
+12:48:00 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000022180FF5EE0>, None, 'http://localhost:51023/session/0f7e7cc2cbe986252660498de4c8f409', <aiohttp.client.ClientSession object at 0x0000022180FF5490>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:48:00 - TestReport - ERROR - FAILED reason:'NoneType' object has no attribute 'values'- method_name:test - args:(<async_test.HomePage object at 0x0000022180FF5DC0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 82, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 78, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+AttributeError: 'NoneType' object has no attribute 'values'
+12:48:00 - TestReport - DEBUG - PASS- method_name:_command: - args:(<async_webdriver.AsyncBrowser object at 0x0000022180FF5D00>, 'DELETE') - kwargs:{'endpoint': ''}
+12:48:26 - TestReport - ERROR - FAILED reason:'dict_values' object is not subscriptable- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001A29333AEB0>, {'element-6066-11e4-a52e-4f735466cecf': '0e25c3ae-b19e-4812-b19c-937de9b0ed0a'}, 'http://localhost:51085/session/8b72db44c68ab11354dcc7ebaed5e948', <aiohttp.client.ClientSession object at 0x000001A29333A3D0>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+TypeError: 'dict_values' object is not subscriptable
+12:48:26 - TestReport - ERROR - FAILED reason:'dict_values' object is not subscriptable- method_name:test - args:(<async_test.HomePage object at 0x000001A29333ACD0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 82, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 78, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 17, in __init__
+    self.element_id = element.values()[0]
+TypeError: 'dict_values' object is not subscriptable
+12:49:31 - TestReport - ERROR - FAILED reason:'dict_values' object is not subscriptable- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001F980D7AEE0>, {'element-6066-11e4-a52e-4f735466cecf': 'a3b577b8-451e-4b41-b832-04ba8378f40a'}, 'http://localhost:51220/session/290a5e969c8256e14e2718ee1b577674', <aiohttp.client.ClientSession object at 0x000001F980D7A400>) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 18, in __init__
+    self.element_id = element.values()[0]
+TypeError: 'dict_values' object is not subscriptable
+12:49:31 - TestReport - ERROR - FAILED reason:'dict_values' object is not subscriptable- method_name:test - args:(<async_test.HomePage object at 0x000001F980D7AD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    element = await self.async_driver.click('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 81, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in find_element
+    return AsyncElement(element_info, self._url, self._session)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 18, in __init__
+    self.element_id = element.values()[0]
+TypeError: 'dict_values' object is not subscriptable
+13:11:25 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001B605B9AEE0>, {'element-6066-11e4-a52e-4f735466cecf': 'edd07eff-273a-45cb-8437-482e57ea63dd'}, 'http://localhost:54946/session/3498ef27fad944d3a6feeae97a9269b4', <aiohttp.client.ClientSession object at 0x000001B605B9A3D0>) - kwargs:{}
+13:11:25 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001B605B9ACD0>,) - kwargs:{}
+13:12:35 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000002A54F5CAEB0>, {'element-6066-11e4-a52e-4f735466cecf': '56076336-504d-4132-9faa-3a952672c2a6'}, 'http://localhost:55041/session/a4b096c1bd5f35fc9de13129d34e07fe', <aiohttp.client.ClientSession object at 0x000002A54F5CA400>) - kwargs:{}
+13:12:35 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000002A54F5CACD0>,) - kwargs:{}
+13:14:24 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001C53370DE20>, {'element-6066-11e4-a52e-4f735466cecf': 'a4edf704-4372-4c0c-ab1f-9a42fb8d9736'}, 'http://localhost:55243/session/8a0ff9bc204b3bdbb246ecc2fe817e00', <aiohttp.client.ClientSession object at 0x000001C53370D310>) - kwargs:{}
+13:14:24 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001C53370DFA0>,) - kwargs:{}
+13:15:33 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000027FEB3ECE50>, {'element-6066-11e4-a52e-4f735466cecf': '55f03a9f-1e09-4502-9977-5cafcc732635'}, 'http://localhost:55437/session/1bb3b98b6a24d7cc6f8b65b54c9099d4', <aiohttp.client.ClientSession object at 0x0000027FEB3EC370>) - kwargs:{}
+13:15:33 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000027FEB3ECFA0>,) - kwargs:{}
+13:16:10 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001889530AEE0>, {'element-6066-11e4-a52e-4f735466cecf': '1284f32a-871d-48bc-a76c-4b1876f71ba5'}, 'http://localhost:55529/session/42dc74064a44d012142341dcfbfa5f1b', <aiohttp.client.ClientSession object at 0x000001889530A3D0>) - kwargs:{}
+13:16:10 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001889530ACD0>,) - kwargs:{}
+13:22:17 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000021A35AAAEE0>, {'element-6066-11e4-a52e-4f735466cecf': '2ccd7a1f-f3ea-4b03-8ac0-9a20b481ac47'}, 'http://localhost:58259/session/62f69d8d8497281b930225a941a822f1', <aiohttp.client.ClientSession object at 0x0000021A35AAA400>) - kwargs:{}
+13:22:17 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000021A35AAAD00>,) - kwargs:{}
+13:23:22 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001E5986BAF10>, {'element-6066-11e4-a52e-4f735466cecf': '73c20019-0dcc-471c-a52c-6592c52f2b7b'}, 'http://localhost:58375/session/4c34e08e592a02b11be17ff8f03ef75a', <aiohttp.client.ClientSession object at 0x000001E5986BA430>) - kwargs:{}
+13:23:22 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001E5986BAD30>,) - kwargs:{}
+13:24:42 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001453B2ADE80>, {'element-6066-11e4-a52e-4f735466cecf': 'b42a049d-9747-4e12-833f-78a01c2b5122'}, 'http://localhost:58545/session/2608f2d512c9664827f6ccdc715cea84', <aiohttp.client.ClientSession object at 0x000001453B2AD3A0>) - kwargs:{}
+13:24:42 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001453B2ADCA0>,) - kwargs:{}
+13:25:20 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001EDBECCAEE0>, {'element-6066-11e4-a52e-4f735466cecf': 'f1c1c956-8d61-4dea-89f6-be7c4dee144e'}, 'http://localhost:58658/session/0f2e5509552ba1ba3a049b6e8c2f8316', <aiohttp.client.ClientSession object at 0x000001EDBECCA400>) - kwargs:{}
+13:25:20 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001EDBECCAD00>,) - kwargs:{}
+13:26:25 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000002C9D3A1DE50>, {'element-6066-11e4-a52e-4f735466cecf': 'fc66d795-1c37-462c-811e-43909e54c0c6'}, 'http://localhost:58778/session/8f260fa9c412546cb5a15ba71c294383', <aiohttp.client.ClientSession object at 0x000002C9D3A1D370>) - kwargs:{}
+13:26:25 - TestReport - ERROR - FAILED reason:Message: unknown command: unknown command: session/8f260fa9c412546cb5a15ba71c294383/click
+- method_name:test - args:(<async_test.HomePage object at 0x000002C9D3A1DFA0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    await self.async_driver.click('xpath', '//*[@id="frame_body"]/div/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/img')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 78, in click
+    return await element.click()
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 43, in click
+    return await self._command("AOST", '/click', json=json)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_element.py", line 26, in _command
+    return await super()._command(method, self.url + endpoint, self.session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 26, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown command: unknown command: session/8f260fa9c412546cb5a15ba71c294383/click
+
+13:27:28 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000018C6E06AEE0>, {'element-6066-11e4-a52e-4f735466cecf': '26cebd19-b8ee-44e6-abad-f19d74d124d2'}, 'http://localhost:58889/session/c184c75c43b664ea065086c218e84e55', <aiohttp.client.ClientSession object at 0x0000018C6E06A400>) - kwargs:{}
+13:27:28 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000018C6E06AD00>,) - kwargs:{}
+13:28:04 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001A2490F5E20>, {'element-6066-11e4-a52e-4f735466cecf': 'd4725629-4fb0-434c-9c1b-a2a7d35ee245'}, 'http://localhost:58972/session/e9d88d2fff76966ba81be62fe5022291', <aiohttp.client.ClientSession object at 0x000001A2490F54C0>) - kwargs:{}
+13:28:08 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001A2490F5D90>,) - kwargs:{}
+13:30:33 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000021F3AD45F10>, {'element-6066-11e4-a52e-4f735466cecf': '036d654c-5e6e-430c-a3ef-6eca293c75e6'}, 'http://localhost:59308/session/17748b0d11ef500c4058e37c004b3a94', <aiohttp.client.ClientSession object at 0x0000021F3AD45460>) - kwargs:{}
+13:30:33 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000021F3AD45D30>,) - kwargs:{}
+13:32:26 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000002665DB44F10>, {'element-6066-11e4-a52e-4f735466cecf': '902ad887-05ac-4e4c-8d82-08780fee9ea2'}, 'http://localhost:59480/session/3522f621b8b6c9abea07cf7c33467af0', <aiohttp.client.ClientSession object at 0x000002665DB44460>) - kwargs:{}
+13:32:26 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000002665DB44D30>,) - kwargs:{}
+13:33:23 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000024D37C55E20>, {'element-6066-11e4-a52e-4f735466cecf': 'b99ce0e2-de72-4763-afc8-0b6a1d1d8773'}, 'http://localhost:59589/session/7d90203c4382b6e5ce0043c57b1c5da9', <aiohttp.client.ClientSession object at 0x0000024D37C554C0>) - kwargs:{}
+13:33:23 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000024D37C55D90>,) - kwargs:{}
+13:33:48 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001CCD395AEE0>, {'element-6066-11e4-a52e-4f735466cecf': 'a44ee1e0-9d85-426c-aaea-6b67a80456f0'}, 'http://localhost:59663/session/75563db59fb2fc8fa28c41abfd0430b0', <aiohttp.client.ClientSession object at 0x000001CCD395A430>) - kwargs:{}
+13:33:48 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001CCD395AD00>,) - kwargs:{}
+13:37:29 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000023128195F10>, {'element-6066-11e4-a52e-4f735466cecf': '40af8d0f-360e-49d3-8d8a-c1f8a3a2577e'}, 'http://localhost:57038/session/4e737100155544292d6fbca977202f58', <aiohttp.client.ClientSession object at 0x0000023128195460>) - kwargs:{}
+13:37:29 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000023128195D30>,) - kwargs:{}
+13:38:53 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x00000208CAEDDE50>, {'element-6066-11e4-a52e-4f735466cecf': 'b8ab2eed-c633-4780-8d5c-fbf7baca32ef'}, 'http://localhost:57175/session/1a639d0ad41a6e40dd86d2e9cf9db7d8', <aiohttp.client.ClientSession object at 0x00000208CAEDD370>) - kwargs:{}
+13:38:53 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x00000208CAEDDF70>,) - kwargs:{}
+13:41:59 - TestReport - ERROR - FAILED reason:Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="frame_body"]/div/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/img"}
+  (Session info: chrome=95.0.4638.69)
+- method_name:test - args:(<async_test.HomePage object at 0x000001E006675D90>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    await self.async_driver.click('xpath', '//*[@id="frame_body"]/div/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/img')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 73, in find_element
+    element_info = await self._command('POST', endpoint, json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    return await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 27, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="frame_body"]/div/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/img"}
+  (Session info: chrome=95.0.4638.69)
+
+13:43:17 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001BBC5E1CEB0>, {'element-6066-11e4-a52e-4f735466cecf': '9df08164-38f8-4cf6-946b-01b74a41b081'}, 'http://localhost:57646/session/6c3efed80104d12c3cf10c91dbfe4305', <aiohttp.client.ClientSession object at 0x000001BBC5E1C400>) - kwargs:{}
+13:43:17 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001BBC5E1CCD0>,) - kwargs:{}
+13:44:28 - TestReport - ERROR - FAILED reason:Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s_kw_wrap"]/span[1]"}
+  (Session info: chrome=95.0.4638.69)
+- method_name:test - args:(<async_test.HomePage object at 0x000002C1A5F7BCA0>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    await self.async_driver.click('xpath', '//*[@id="s_kw_wrap"]/span[1]')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 73, in find_element
+    element_info = await self._command('POST', endpoint, json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    return await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 27, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s_kw_wrap"]/span[1]"}
+  (Session info: chrome=95.0.4638.69)
+
+13:46:12 - TestReport - ERROR - FAILED reason:Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s_kw_wrap"]/span[1]"}
+  (Session info: chrome=95.0.4638.69)
+- method_name:test - args:(<async_test.HomePage object at 0x0000016A10C4AD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    await self.async_driver.click('xpath', '//*[@id="s_kw_wrap"]/span[1]')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 77, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 73, in find_element
+    element_info = await self._command('POST', endpoint, json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    return await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 27, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s_kw_wrap"]/span[1]"}
+  (Session info: chrome=95.0.4638.69)
+
+13:47:17 - TestReport - ERROR - FAILED reason:Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s_kw_wrap"]/span[1]"}
+  (Session info: chrome=95.0.4638.69)
+- method_name:test - args:(<async_test.HomePage object at 0x00000215AA38DD00>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    await self.async_driver.click('xpath', '//*[@id="s_kw_wrap"]/span[1]')
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 78, in click
+    element = await self.find_element(*location)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 74, in find_element
+    element_info = await self._command('POST', endpoint, json=body)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_webdriver.py", line 51, in _command
+    return await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_http_client.py", line 27, in _command
+    self._error_handler.check_response(json_res)
+  File "C:\Users\iam2cc\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s_kw_wrap"]/span[1]"}
+  (Session info: chrome=95.0.4638.69)
+
+13:48:22 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000022209175F40>, {'element-6066-11e4-a52e-4f735466cecf': 'f27dcae9-e984-4657-96d7-018534991e2d'}, 'http://localhost:60379/session/cbd168fa3ab77bdf1beb0eab9e408408', <aiohttp.client.ClientSession object at 0x0000022209175490>) - kwargs:{}
+13:48:22 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000022209175D60>,) - kwargs:{}
+13:48:51 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001C9E12FAE80>, {'element-6066-11e4-a52e-4f735466cecf': '516dbdc9-89b1-4e05-ac89-71f803d75f4f'}, 'http://localhost:60443/session/57500ce2b3d4a3da41adcb9f09a4a870', <aiohttp.client.ClientSession object at 0x000001C9E12FA3A0>) - kwargs:{}
+13:48:52 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001C9E12FAFA0>,) - kwargs:{}
+13:51:21 - TestReport - ERROR - FAILED reason:send_keys() missing 1 required keyword-only argument: 'text'- method_name:test - args:(<async_test.HomePage object at 0x000001FC64856D60>,) - kwargs:{}
+Traceback (most recent call last):
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\util\decorector.py", line 71, in inner_func
+    await func(*args, **kwargs)
+  File "C:\Users\iam2cc\Desktop\selfProject\test_framework\async_selenium\async_test.py", line 20, in test
+    await self.async_driver.send_keys('xpath', '//*[@id="su"]','123')
+TypeError: send_keys() missing 1 required keyword-only argument: 'text'
+13:53:05 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000019796015FD0>, {'element-6066-11e4-a52e-4f735466cecf': '20cc9b67-1d66-4e05-9103-985dafbacc76'}, 'http://localhost:60882/session/aa959cb1eb103c49cc03669a84de80b0', <aiohttp.client.ClientSession object at 0x00000197960154F0>) - kwargs:{}
+13:53:05 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000019796015DF0>,) - kwargs:{}
+14:33:56 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000013E5B545FA0>, {'element-6066-11e4-a52e-4f735466cecf': '8cb6d889-bc18-4fa0-952d-8c42578e1699'}, 'http://localhost:59087/session/e7cd067a6a7c2d382f4104462e32f1d6', <aiohttp.client.ClientSession object at 0x0000013E5B5454C0>) - kwargs:{}
+14:33:57 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000013E5B545DC0>,) - kwargs:{}
+14:34:09 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000002239A1C5FA0>, {'element-6066-11e4-a52e-4f735466cecf': '9ab504f2-6c78-4641-b351-caa4d2cdec68'}, 'http://localhost:59139/session/c5367314ac53e76961ca196f4e9799e6', <aiohttp.client.ClientSession object at 0x000002239A1C54C0>) - kwargs:{}
+14:34:09 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000002239A1C5DC0>,) - kwargs:{}
+14:34:14 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000020012515F40>, {'element-6066-11e4-a52e-4f735466cecf': '948e36f3-efef-4eaa-8dc0-dedfce32a7bd'}, 'http://localhost:59180/session/ac928c2700a05639d29bfdd3a5a41f66', <aiohttp.client.ClientSession object at 0x0000020012515460>) - kwargs:{}
+14:34:15 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000020012515D60>,) - kwargs:{}
+14:34:59 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001FDCF00BF10>, {'element-6066-11e4-a52e-4f735466cecf': '48215b27-2ad6-4d79-80ed-dfab91184b65'}, 'http://localhost:59329/session/bc04faf074266923bd06bcc10b37b333', <aiohttp.client.ClientSession object at 0x000001FDCF00B460>) - kwargs:{}
+14:35:02 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001FDCF00BD30>,) - kwargs:{}
+14:35:49 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001F5D391CEE0>, {'element-6066-11e4-a52e-4f735466cecf': 'ea4d8143-ad99-46ba-ae53-78702b9e5498'}, 'http://localhost:59422/session/7308e65e94b402c39a575bf8f4863d91', <aiohttp.client.ClientSession object at 0x000001F5D391C430>) - kwargs:{}
+14:35:59 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001F5D391CD00>,) - kwargs:{}
+14:37:01 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x0000020E3F325FD0>, {'element-6066-11e4-a52e-4f735466cecf': 'baaac0eb-063f-4572-9f1b-c94b81e135d2'}, 'http://localhost:59542/session/eb4a757c09f4cf8a7355e450143ea4d3', <aiohttp.client.ClientSession object at 0x0000020E3F3254F0>) - kwargs:{}
+14:37:11 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x0000020E3F325DF0>,) - kwargs:{}
+14:38:44 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001F5D792AF10>, {'element-6066-11e4-a52e-4f735466cecf': '39eca16b-9691-47a3-b5e5-b57cb37a68d2'}, 'http://localhost:59708/session/9155792bbf73b3659c9e1f0c6d67a90c', <aiohttp.client.ClientSession object at 0x000001F5D792A430>) - kwargs:{}
+14:38:55 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001F5D792AD30>,) - kwargs:{}
+14:40:09 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x000001A30297AF10>, {'element-6066-11e4-a52e-4f735466cecf': '6e9dd1f4-87d7-413d-a1de-8d0c8488e9f1'}, 'http://localhost:59960/session/7f60d986e89c04abea298b8637b2cfa5', <aiohttp.client.ClientSession object at 0x000001A30297A430>) - kwargs:{}
+14:40:20 - TestReport - DEBUG - PASS- method_name:test: - args:(<async_test.HomePage object at 0x000001A30297AD30>,) - kwargs:{}

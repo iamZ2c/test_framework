@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-
+import os
+import platform
 
 # ------------------------------BROWSER_SETTINGS--------------------------------------------
 
 # 隐式等待时间
-import os
+
 
 IMP_TIME = 30
 # 页面加载时间
@@ -17,9 +18,15 @@ HEADLESS = False
 IE_DRIVER_PATH = ''
 
 # ------------------------------CHROME_SETTINGS----------------------------------------------
-# CHROME_DRIVER_PATH = 'C:\\Users\\iam2cc\\Desktop\\selfProject\\unitest_framework\\dirver\\chromedriver.exe'
-CHROME_DRIVER_PATH = '/Users/bytedance/Desktop/test_framework/dirver/chromedriver'
+START_MAX = True
+CHROME_DRIVER_PATH = None
+if platform.system() == 'Windows':
+    CHROME_DRIVER_PATH = os.path.join(os.path.dirname(os.getcwd()), 'driver', 'chromedriver.exe')
 
+elif platform.system() == 'Linux':
+    CHROME_DRIVER_PATH = os.path.join(os.path.dirname(os.getcwd()), 'driver', 'chromedriver')
+
+print(CHROME_DRIVER_PATH)
 # 是否提添加启动参数
 CHROME_OPTION_MARK = True
 # 启动完成后的操作
@@ -35,23 +42,31 @@ CHROME_SCRIPT_TIME_OUT = 30
 
 CHROME_WINDOW_SIZE = (1920, 900)
 
-START_MAX = "--kiosk"
+ARGS = []
+
+if HEADLESS:
+    ARGS.append('--headless')
+else:
+    ...
+if START_MAX:
+    if platform.system() == 'Windows':
+        ARGS.append('--start-maximized')
+    elif platform.system() == 'Linux':
+        ARGS.append('--kiosk')
 
 EXP = {
     # 不显示chrome浏览器正在收到自动化浏览软件的控制
     'excludeSwitches': ['enable-automation'],
     # 以iphone6的分辨打开网站
     # 'mobileEmulation': {'deviceName': 'iPhone 6'},
-    'args': [
-        # '--start-maximized',
-        # '--headless',
-        START_MAX
-    ],
+
+    'args': ARGS,
     'prefs': {
         'credentials_enable_service': False,
         'profile.password_manager_enabled': False
     }
 }
+
 
 CHROME_CAPS = {
     'capabilities': {
@@ -70,7 +85,7 @@ CHROME_CAPS = {
 }
 
 # ------------------------------PROJECT_SETTINGS----------------------------------------------
-PROJECT_URL = "http://www.zhixuetong.com.cn/"
+PROJECT_URL = "https://www.baidu.com/"
 
 BY_RULES = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
 

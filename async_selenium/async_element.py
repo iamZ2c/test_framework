@@ -1,3 +1,5 @@
+from time import sleep
+
 from icecream import icecream
 
 from async_http_client import Command
@@ -14,14 +16,16 @@ class AsyncElement(Command):
         :param session:
         :return:
         """
-        self.element_id = element.values()[0]
+
+        self.element_id = list(element.values())[0]
         self.url = url
         self.session = session
         self.api = f"{self.url}/element/{self.element_id}"
         self.session_id = self.url.split('/')[-1]
 
     async def _command(self, method, endpoint, **kwargs):
-        return await super(AsyncElement, self)._command(method, self.url + endpoint, self.session, **kwargs)
+        print(self.api + endpoint)
+        return await super()._command(method, self.api + endpoint, self.session, **kwargs)
 
     @property
     async def text(self):

@@ -1,3 +1,5 @@
+from time import sleep
+
 from aiohttp import ClientSession
 from icecream import ic
 
@@ -45,9 +47,8 @@ class AsyncBrowser(Command):
     def _session(self):
         return getattr(self, '_http_session')
 
-    @add_async_log
     async def _command(self, method: str, endpoint: str, **kwargs):
-        await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
+        return await super(AsyncBrowser, self)._command(method, self._url + endpoint, self._session, **kwargs)
 
     async def get(self, url: str):
         body = {
@@ -69,8 +70,7 @@ class AsyncBrowser(Command):
             'value': value
         }
         # 返回一个json，从json里面获取元素
-        element_info = await self._command("POST", endpoint, json=body)
-        ic(element_info)
+        element_info = await self._command('POST', endpoint, json=body)
         return AsyncElement(element_info, self._url, self._session)
 
     async def click(self, *location):
@@ -106,4 +106,5 @@ class AsyncBrowser(Command):
         return self
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
-        await self.quit()
+        ...
+        # await self.quit()

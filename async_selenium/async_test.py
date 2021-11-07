@@ -1,3 +1,5 @@
+from time import sleep
+
 from config.settings import PROJECT_URL
 from util.decorector import add_async_log
 
@@ -17,6 +19,8 @@ class HomePage(BasePage):
     @add_async_log
     async def test(self):
         await self.get(url=PROJECT_URL)
-        element = await self.async_driver.find_element('xpath', '//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
-        print(element)
-        element.click()
+        await self.async_driver.send_keys('xpath', '//*[@id="su"]',text = "!23123")
+        sleep(10)
+
+
+
