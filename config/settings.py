@@ -21,12 +21,12 @@ IE_DRIVER_PATH = ''
 START_MAX = True
 CHROME_DRIVER_PATH = None
 if platform.system() == 'Windows':
-    CHROME_DRIVER_PATH = os.path.join(os.path.dirname(os.getcwd()), 'driver', 'chromedriver.exe')
+    CHROME_DRIVER_PATH = os.path.join(os.path.dirname(os.getcwd()), 'driver', 'chromedrivers', 'chromedriver.exe')
 
-elif platform.system() == 'Linux':
-    CHROME_DRIVER_PATH = os.path.join(os.path.dirname(os.getcwd()), 'driver', 'chromedriver')
+elif platform.system() == 'Darwin':
+    CHROME_DRIVER_PATH = os.path.join(os.path.dirname(os.getcwd()), 'driver', 'chromedrivers', 'chromedriver')
 
-print(CHROME_DRIVER_PATH)
+
 # 是否提添加启动参数
 CHROME_OPTION_MARK = True
 # 启动完成后的操作
@@ -67,7 +67,6 @@ EXP = {
     }
 }
 
-
 CHROME_CAPS = {
     'capabilities': {
         'firstMatch:': [{}],
@@ -75,9 +74,9 @@ CHROME_CAPS = {
             'browserName': 'chrome',
             'platformName': 'any',
             "timeouts": {
-                'implicit': 30000,
-                'pageLoad': 300000,
-                'script': 30000
+                'implicit': 3000,
+                'pageLoad': 30000,
+                'script': 3000
             },
             'goog:chromeOptions': EXP
         }
@@ -85,7 +84,7 @@ CHROME_CAPS = {
 }
 
 # ------------------------------PROJECT_SETTINGS----------------------------------------------
-PROJECT_URL = "https://www.baidu.com/"
+PROJECT_URL = "http://www.zhixuetong.com.cn/#/main/course"
 
 BY_RULES = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
 

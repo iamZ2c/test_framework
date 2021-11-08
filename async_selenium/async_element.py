@@ -24,7 +24,6 @@ class AsyncElement(Command):
         self.session_id = self.url.split('/')[-1]
 
     async def _command(self, method, endpoint, **kwargs):
-        print(self.api + endpoint)
         return await super()._command(method, self.api + endpoint, self.session, **kwargs)
 
     @property

@@ -7,8 +7,8 @@ from async_selenium.async_element import AsyncElement
 from async_selenium.async_http_client import Command
 from selenium import webdriver
 
+
 # webdriver.Chrome().get()
-from util.decorector import add_async_log
 
 
 class AsyncBrowser(Command):
@@ -71,6 +71,7 @@ class AsyncBrowser(Command):
         }
         # 返回一个json，从json里面获取元素
         element_info = await self._command('POST', endpoint, json=body)
+        print(element_info)
         return AsyncElement(element_info, self._url, self._session)
 
     async def click(self, *location):
@@ -106,5 +107,4 @@ class AsyncBrowser(Command):
         return self
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
-        ...
-        # await self.quit()
+        await self.quit()
