@@ -22,7 +22,7 @@ class Command:
                 json_res['status'] = ErrorCode.SUCCESS
             else:
                 json_res['status'] = ErrorCode.UNKNOWN_ERROR
-
+            print(json_res['value'])
             # 如果状态正确就直接返回结果,否则抛出错误和错误信息
             self._error_handler.check_response(json_res)
             return json_res['value']

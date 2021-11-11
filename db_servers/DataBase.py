@@ -119,5 +119,5 @@ class OracleClient(DataBase):
 
 
 # 测试代码
-# a = MysqlClient.setUp()
-# print(a.select('SELECT * FROM isn_order', (),1))
+a = MysqlClient.setUp()
+print(a.select('SELECT * FROM isn_order', (),1))

@@ -19,7 +19,8 @@ class HomePage(BasePage):
 
     async def test(self):
         await self.get(url=PROJECT_URL)
-        element = await self.async_driver.find_element('xpath','//*[@id="frame_box"]/header/header/div/ul/li[2]/a')
+        # sleep(3000)
+        element = await self.async_driver.find_element('xpath','/html/body/div/div/header/header/div/ul/li[2]/a')
         await element.click()
 
 

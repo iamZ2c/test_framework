@@ -74,9 +74,9 @@ CHROME_CAPS = {
             'browserName': 'chrome',
             'platformName': 'any',
             "timeouts": {
-                'implicit': 3000,
-                'pageLoad': 30000,
-                'script': 3000
+                'implicit': 30000,
+                'pageLoad': 300000,
+                'script': 30000
             },
             'goog:chromeOptions': EXP
         }

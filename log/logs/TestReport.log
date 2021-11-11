@@ -2000,3 +2000,95 @@ TypeError: send_keys() missing 1 required keyword-only argument: 'text'
 20:03:18 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fa14026af40>, {'element-6066-11e4-a52e-4f735466cecf': '842eba7b-415e-d848-a435-6355334dbfc8'}, 'http://localhost:50821/session/27f3b957-cf5b-874a-8049-748a1db763ef', <aiohttp.client.ClientSession object at 0x7fa140246af0>) - kwargs:{}
 20:03:32 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fa9705a5fa0>, {'element-6066-11e4-a52e-4f735466cecf': '2bbc9d22-fcb3-c340-bc24-94ae6af4b793'}, 'http://localhost:50910/session/afc3dff3-62ce-9a48-928f-2134b3d1ccc3', <aiohttp.client.ClientSession object at 0x7fa9705a5b50>) - kwargs:{}
 20:03:32 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fa9705c75b0>, {'element-6066-11e4-a52e-4f735466cecf': '2bbc9d22-fcb3-c340-bc24-94ae6af4b793'}, 'http://localhost:50910/session/afc3dff3-62ce-9a48-928f-2134b3d1ccc3', <aiohttp.client.ClientSession object at 0x7fa9705a5b50>) - kwargs:{}
+20:40:34 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7febf83e0f10>, {'element-6066-11e4-a52e-4f735466cecf': 'e60d3de4-fcb8-473b-ab56-d0b561c41284'}, 'http://localhost:55913/session/2588e603ab6ee9d7cfd3894fd1953e3d', <aiohttp.client.ClientSession object at 0x7febf83e0a60>) - kwargs:{}
+20:42:05 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f98e022df10>, {'element-6066-11e4-a52e-4f735466cecf': 'e2661ba5-55a0-4054-8d27-dbd1b8ee643f'}, 'http://localhost:56128/session/333a5754847366b552b23e71433c048c', <aiohttp.client.ClientSession object at 0x7f98e022daf0>) - kwargs:{}
+20:47:14 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fec882c8f10>, {'element-6066-11e4-a52e-4f735466cecf': '2be6f758-fd8f-4251-8c8c-7774341f0f6d'}, 'http://localhost:57003/session/f862a421fc57865fc062aea035f9a8d7', <aiohttp.client.ClientSession object at 0x7fec882c8a60>) - kwargs:{}
+20:48:15 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fd210888ee0>, {'element-6066-11e4-a52e-4f735466cecf': 'e4e2b463-2473-469d-b76d-a6b0cb086b6c'}, 'http://localhost:57129/session/a7b42d216e8872db9bf70a8822f6b54b', <aiohttp.client.ClientSession object at 0x7fd210888a30>) - kwargs:{}
+21:00:44 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f7cc86b5d60>, {'element-6066-11e4-a52e-4f735466cecf': '1cad33cd-3f62-2943-ac43-e2676fd51cb8'}, 'http://localhost:59266/session/1d00e526-9b93-a146-a7b5-39a90644d4b8', <aiohttp.client.ClientSession object at 0x7f7cf80cf3a0>) - kwargs:{}
+21:00:44 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f7cf80cf310>, {'element-6066-11e4-a52e-4f735466cecf': '1cad33cd-3f62-2943-ac43-e2676fd51cb8'}, 'http://localhost:59266/session/1d00e526-9b93-a146-a7b5-39a90644d4b8', <aiohttp.client.ClientSession object at 0x7f7cf80cf3a0>) - kwargs:{}
+21:00:57 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fc358238ca0>, {'element-6066-11e4-a52e-4f735466cecf': 'f3a5d666-731d-7640-b2fd-ec4762bbf79f'}, 'http://localhost:59398/session/3f75a6b2-39f0-5241-b117-14d0d95f5d76', <aiohttp.client.ClientSession object at 0x7fc358238a30>) - kwargs:{}
+21:00:57 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fc358238eb0>, {'element-6066-11e4-a52e-4f735466cecf': 'f3a5d666-731d-7640-b2fd-ec4762bbf79f'}, 'http://localhost:59398/session/3f75a6b2-39f0-5241-b117-14d0d95f5d76', <aiohttp.client.ClientSession object at 0x7fc358238a30>) - kwargs:{}
+21:21:04 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f9ae85cef70>, {'element-6066-11e4-a52e-4f735466cecf': '67182d88-5637-40df-b9ad-616905f73830'}, 'http://localhost:49350/session/53b0da1e13c8a845625df86f1deb3b4e', <aiohttp.client.ClientSession object at 0x7f9ae85cec70>) - kwargs:{}
+21:21:06 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f9ae85cedf0>, {'element-6066-11e4-a52e-4f735466cecf': '25219c15-d200-b342-ac04-c086d070811d'}, 'http://localhost:49347/session/c9ddbb2d-b533-1a4a-946d-75214853c16f', <aiohttp.client.ClientSession object at 0x7f9ae85cec10>) - kwargs:{}
+21:21:31 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f9e205ad190>, {'element-6066-11e4-a52e-4f735466cecf': 'a0b6c452-29d6-284d-b8aa-bb9a4039d6a5'}, 'http://localhost:49475/session/0a96a587-2af0-d04e-9cc2-11409302b24f', <aiohttp.client.ClientSession object at 0x7f9e2058dc70>) - kwargs:{}
+21:21:31 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f9e205ad610>, {'element-6066-11e4-a52e-4f735466cecf': 'a0b6c452-29d6-284d-b8aa-bb9a4039d6a5'}, 'http://localhost:49475/session/0a96a587-2af0-d04e-9cc2-11409302b24f', <aiohttp.client.ClientSession object at 0x7f9e2058dc70>) - kwargs:{}
+21:21:46 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fa9281760a0>, {'element-6066-11e4-a52e-4f735466cecf': 'fcc72c2d-6506-0e4c-86a1-1a8f4c081dec'}, 'http://localhost:49612/session/28216605-5749-5649-b299-9b3cf048495d', <aiohttp.client.ClientSession object at 0x7fa928156c40>) - kwargs:{}
+21:21:46 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7fa928176670>, {'element-6066-11e4-a52e-4f735466cecf': 'fcc72c2d-6506-0e4c-86a1-1a8f4c081dec'}, 'http://localhost:49612/session/28216605-5749-5649-b299-9b3cf048495d', <aiohttp.client.ClientSession object at 0x7fa928156c40>) - kwargs:{}
+21:22:07 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f7c285be0a0>, {'element-6066-11e4-a52e-4f735466cecf': '60e0fa3e-7816-2b4e-8783-775b116fbfb8'}, 'http://localhost:49743/session/5cf15f2b-6c59-d344-adf2-90415ee1a9d3', <aiohttp.client.ClientSession object at 0x7f7c2859ec40>) - kwargs:{}
+21:22:07 - TestReport - DEBUG - PASS- method_name:__init__: - args:(<async_selenium.async_element.AsyncElement object at 0x7f7c285be670>, {'element-6066-11e4-a52e-4f735466cecf': '60e0fa3e-7816-2b4e-8783-775b116fbfb8'}, 'http://localhost:49743/session/5cf15f2b-6c59-d344-adf2-90415ee1a9d3', <aiohttp.client.ClientSession object at 0x7f7c2859ec40>) - kwargs:{}
+15:32:35 - TestReport - ERROR - FAILED reason:'NoneType' object is not iterable- method_name:test_tip_text: - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
+Traceback (most recent call last):
+  File "/Users/bytedance/Desktop/test_framework/util/decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "/Users/bytedance/Desktop/test_framework/test_case/data_driven_test_case.py", line 33, in test_tip_text
+    self.assertTrue(expr=self.rb.assert_tip_text(key=key, text=assert_text),
+  File "/Users/bytedance/Desktop/test_framework/business/register_business.py", line 28, in assert_tip_text
+    self.register_h.click_home_page_button()
+  File "/Users/bytedance/Desktop/test_framework/handle/register_handle.py", line 9, in click_home_page_button
+    self.register_p.get_homepage_register_button_element().click()
+  File "/Users/bytedance/Desktop/test_framework/page/register_page.py", line 9, in get_homepage_register_button_element
+    element = self.fe.get_element(key="homepage_register_button")
+  File "/Users/bytedance/Desktop/test_framework/base/find_element.py", line 26, in get_element
+    read_ini = IniReader()
+  File "/Users/bytedance/Desktop/test_framework/reader/ini_reader.py", line 11, in __init__
+    self.config.read(file_path, encoding='utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/configparser.py", line 694, in read
+    for filename in filenames:
+TypeError: 'NoneType' object is not iterable
+15:32:42 - TestReport - ERROR - FAILED reason:'NoneType' object is not iterable- method_name:test_tip_text: - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_2___v_code_None____请输入验证码__>, ['v_code_None', '请输入验证码']) - kwargs:{}
+Traceback (most recent call last):
+  File "/Users/bytedance/Desktop/test_framework/util/decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "/Users/bytedance/Desktop/test_framework/test_case/data_driven_test_case.py", line 33, in test_tip_text
+    self.assertTrue(expr=self.rb.assert_tip_text(key=key, text=assert_text),
+  File "/Users/bytedance/Desktop/test_framework/business/register_business.py", line 28, in assert_tip_text
+    self.register_h.click_home_page_button()
+  File "/Users/bytedance/Desktop/test_framework/handle/register_handle.py", line 9, in click_home_page_button
+    self.register_p.get_homepage_register_button_element().click()
+  File "/Users/bytedance/Desktop/test_framework/page/register_page.py", line 9, in get_homepage_register_button_element
+    element = self.fe.get_element(key="homepage_register_button")
+  File "/Users/bytedance/Desktop/test_framework/base/find_element.py", line 26, in get_element
+    read_ini = IniReader()
+  File "/Users/bytedance/Desktop/test_framework/reader/ini_reader.py", line 11, in __init__
+    self.config.read(file_path, encoding='utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/configparser.py", line 694, in read
+    for filename in filenames:
+TypeError: 'NoneType' object is not iterable
+17:22:35 - TestReport - ERROR - FAILED reason:'NoneType' object is not iterable- method_name:test_tip_text: - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_1___phone_num_None_tip____请输手机号__>, ['phone_num_None_tip', '请输手机号']) - kwargs:{}
+Traceback (most recent call last):
+  File "/Users/bytedance/Desktop/test_framework/util/decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "/Users/bytedance/Desktop/test_framework/test_case/data_driven_test_case.py", line 33, in test_tip_text
+    self.assertTrue(expr=self.rb.assert_tip_text(key=key, text=assert_text),
+  File "/Users/bytedance/Desktop/test_framework/business/register_business.py", line 28, in assert_tip_text
+    self.register_h.click_home_page_button()
+  File "/Users/bytedance/Desktop/test_framework/handle/register_handle.py", line 9, in click_home_page_button
+    self.register_p.get_homepage_register_button_element().click()
+  File "/Users/bytedance/Desktop/test_framework/page/register_page.py", line 9, in get_homepage_register_button_element
+    element = self.fe.get_element(key="homepage_register_button")
+  File "/Users/bytedance/Desktop/test_framework/base/find_element.py", line 26, in get_element
+    read_ini = IniReader()
+  File "/Users/bytedance/Desktop/test_framework/reader/ini_reader.py", line 11, in __init__
+    self.config.read(file_path, encoding='utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/configparser.py", line 694, in read
+    for filename in filenames:
+TypeError: 'NoneType' object is not iterable
+17:22:42 - TestReport - ERROR - FAILED reason:'NoneType' object is not iterable- method_name:test_tip_text: - args:(<data_driven_test_case.DataDrivenTestCase testMethod=test_tip_text_2___v_code_None____请输入验证码__>, ['v_code_None', '请输入验证码']) - kwargs:{}
+Traceback (most recent call last):
+  File "/Users/bytedance/Desktop/test_framework/util/decorector.py", line 51, in inner_func
+    func(*args, **kwargs)
+  File "/Users/bytedance/Desktop/test_framework/test_case/data_driven_test_case.py", line 33, in test_tip_text
+    self.assertTrue(expr=self.rb.assert_tip_text(key=key, text=assert_text),
+  File "/Users/bytedance/Desktop/test_framework/business/register_business.py", line 28, in assert_tip_text
+    self.register_h.click_home_page_button()
+  File "/Users/bytedance/Desktop/test_framework/handle/register_handle.py", line 9, in click_home_page_button
+    self.register_p.get_homepage_register_button_element().click()
+  File "/Users/bytedance/Desktop/test_framework/page/register_page.py", line 9, in get_homepage_register_button_element
+    element = self.fe.get_element(key="homepage_register_button")
+  File "/Users/bytedance/Desktop/test_framework/base/find_element.py", line 26, in get_element
+    read_ini = IniReader()
+  File "/Users/bytedance/Desktop/test_framework/reader/ini_reader.py", line 11, in __init__
+    self.config.read(file_path, encoding='utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/configparser.py", line 694, in read
+    for filename in filenames:
+TypeError: 'NoneType' object is not iterable

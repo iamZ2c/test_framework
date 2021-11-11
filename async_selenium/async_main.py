@@ -20,7 +20,7 @@ async def main(cls_list, url, caps):
                         await eval(f'instance.{attr}()')
 
 
-if __name__ == '__main__':
+def run():
     gec_server = Fserver("/Users/bytedance/Desktop/test_framework/driver/geckodrivers/geckodriver")
     gec_server.start()
     gec_server_url = gec_server.service_url
@@ -28,5 +28,10 @@ if __name__ == '__main__':
     server.start()
     server_url = server.service_url
     loop = asyncio.get_event_loop()
-    utruef = asyncio.gather(main([HomePage], server_url, CHROME_CAPS), main([HomePage], gec_server_url,{}))
+    utruef = asyncio.gather(main([HomePage], server_url, CHROME_CAPS),
+                            main([HomePage], gec_server_url, {'capabilities': {}}))
     loop.run_until_complete(utruef)
+
+
+if __name__ == '__main__':
+    run()

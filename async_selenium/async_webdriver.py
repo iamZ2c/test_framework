@@ -71,7 +71,6 @@ class AsyncBrowser(Command):
         }
         # 返回一个json，从json里面获取元素
         element_info = await self._command('POST', endpoint, json=body)
-        print(element_info)
         return AsyncElement(element_info, self._url, self._session)
 
     async def click(self, *location):
